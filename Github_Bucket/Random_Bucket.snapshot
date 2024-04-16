@@ -49,6 +49,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0f4618a-40f3-3b4a-9d31-4dd875b7fe69",
+            "id" : "7063a965-87a5-3d53-a9a2-17710048747e",
+            "instanceIdentifier" : "e5ac75e2-018e-1000-00a0-79a0f36d9ffa",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0f4618a-40f3-3b4a-9d31-4dd875b7fe69",
+          "identifier" : "7ed398f2-64ea-35c1-94b4-9c31c3b62101",
+          "instanceIdentifier" : "e5ac8710-018e-1000-95d3-a909654b3653",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0f4618a-40f3-3b4a-9d31-4dd875b7fe69",
+            "id" : "0586cf25-d9ef-369e-9b08-04c1a4c61c7c",
+            "instanceIdentifier" : "865f6647-1e19-3e7f-20e3-09cdd8e8ffb9",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0f4618a-40f3-3b4a-9d31-4dd875b7fe69",
             "id" : "0586cf25-d9ef-369e-9b08-04c1a4c61c7c",
             "instanceIdentifier" : "865f6647-1e19-3e7f-20e3-09cdd8e8ffb9",
             "name" : "Funnel",
@@ -114,6 +147,61 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.25.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b0f4618a-40f3-3b4a-9d31-4dd875b7fe69",
+          "identifier" : "7063a965-87a5-3d53-a9a2-17710048747e",
+          "instanceIdentifier" : "e5ac75e2-018e-1000-00a0-79a0f36d9ffa",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LogMessage",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 270.0,
+            "y" : 406.0
+          },
+          "properties" : {
+            "log-level" : "info"
+          },
+          "propertyDescriptors" : {
+            "log-message" : {
+              "displayName" : "Log message",
+              "identifiesControllerService" : false,
+              "name" : "log-message",
+              "sensitive" : false
+            },
+            "log-level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "log-level",
+              "sensitive" : false
+            },
+            "log-prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "log-prefix",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 25,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LogMessage",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
