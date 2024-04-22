@@ -1,6 +1,0 @@
-flows:
-  14acc3e7-d684-48b9-8023-d87588706e1f: {ver: 1, file: Temp_Flow.snapshot, comments: '',
-    author: anonymous, created: 1713792946676, flowName: Temp_Flow, flowDesc: Creating
-      flow from CLI}
-layoutVer: 1
-bucketId: 4b0eb873-e79f-4202-b79a-24758b2d7f29
