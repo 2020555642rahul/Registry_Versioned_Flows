@@ -1,0 +1,6 @@
+flows:
+  a04827d0-c31f-4867-b7ea-2b6c0c390d0d: {ver: 1, file: File_Fetching.snapshot, comments: '',
+    author: anonymous, created: 1713858378239, flowName: File_Fetching, flowDesc: Creating
+      flow from CLI}
+layoutVer: 1
+bucketId: 9ad15cc0-3730-4d94-be4e-67ef5ff38c78
