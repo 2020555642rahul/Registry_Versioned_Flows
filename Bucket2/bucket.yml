@@ -1,6 +1,0 @@
-flows:
-  008da734-076c-45ac-a996-c43820bd5617: {ver: 1, file: Appalti.snapshot, comments: '',
-    author: anonymous, created: 1714457565585, flowName: Appalti, flowDesc: Creating
-      flow from CLI}
-layoutVer: 1
-bucketId: b38c0135-de60-4575-a4d5-f43257340e62
