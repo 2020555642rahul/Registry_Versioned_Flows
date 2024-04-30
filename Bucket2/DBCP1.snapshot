@@ -1,0 +1,274 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : {
+        "44c23802-7660-3577-b123-545dedcb66c3" : {
+          "identifier" : "44c23802-7660-3577-b123-545dedcb66c3",
+          "name" : "DBCPConnect"
+        }
+      },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+            "id" : "730af347-d61a-3454-9d60-86f6a615f979",
+            "instanceIdentifier" : "2d4c7cbc-018f-1000-13d1-7e2d785c2edb",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+          "identifier" : "ab74538e-d938-3d02-9c06-aa0f78b8a372",
+          "instanceIdentifier" : "2d4c9442-018f-1000-d056-70c38f6c7e33",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+            "id" : "052fbc41-a623-3a12-b4f1-14aeb74c0660",
+            "instanceIdentifier" : "2d4c418b-018f-1000-c9a3-1c8fd57f8d1d",
+            "name" : "ExecuteSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+            "id" : "67966468-3a31-3922-90c2-0b24127d469d",
+            "instanceIdentifier" : "2d4c5579-018f-1000-984b-739497b37f23",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+          "identifier" : "2869987b-58f6-3b90-b0b4-e2d0e3e78ec9",
+          "instanceIdentifier" : "2d4c702f-018f-1000-c152-933da4882b03",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+            "id" : "052fbc41-a623-3a12-b4f1-14aeb74c0660",
+            "instanceIdentifier" : "2d4c418b-018f-1000-c9a3-1c8fd57f8d1d",
+            "name" : "ExecuteSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+          "identifier" : "67966468-3a31-3922-90c2-0b24127d469d",
+          "instanceIdentifier" : "2d4c5579-018f-1000-984b-739497b37f23",
+          "position" : {
+            "x" : 643.9999995259496,
+            "y" : 118.00000367439242
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+          "identifier" : "730af347-d61a-3454-9d60-86f6a615f979",
+          "instanceIdentifier" : "2d4c7cbc-018f-1000-13d1-7e2d785c2edb",
+          "position" : {
+            "x" : 365.99999952594965,
+            "y" : 312.0000036743924
+          }
+        } ],
+        "identifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "2d4c16fb-018f-1000-2936-0e069daa5f0b",
+        "labels" : [ ],
+        "logFileSuffix" : "",
+        "name" : "DBCP",
+        "outputPorts" : [ ],
+        "parameterContextName" : "Params",
+        "position" : {
+          "x" : 1352.0,
+          "y" : 720.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.25.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "d2e78795-a008-35b9-a07d-a0bbe13c0edb",
+          "identifier" : "052fbc41-a623-3a12-b4f1-14aeb74c0660",
+          "instanceIdentifier" : "2d4c418b-018f-1000-c9a3-1c8fd57f8d1d",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ExecuteSQL",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 136.0,
+            "y" : 56.0
+          },
+          "properties" : {
+            "esql-max-rows" : "0",
+            "dbf-default-precision" : "10",
+            "Max Wait Time" : "0 seconds",
+            "Database Connection Pooling Service" : "44c23802-7660-3577-b123-545dedcb66c3",
+            "esql-auto-commit" : "true",
+            "dbf-user-logical-types" : "false",
+            "dbf-default-scale" : "0",
+            "compression-format" : "NONE",
+            "esql-output-batch-size" : "0",
+            "esql-fetch-size" : "0",
+            "SQL select query" : "select * from CSV_Data;",
+            "dbf-normalize" : "false"
+          },
+          "propertyDescriptors" : {
+            "esql-max-rows" : {
+              "displayName" : "Max Rows Per Flow File",
+              "identifiesControllerService" : false,
+              "name" : "esql-max-rows",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "Max Wait Time" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "Max Wait Time",
+              "sensitive" : false
+            },
+            "Database Connection Pooling Service" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "Database Connection Pooling Service",
+              "sensitive" : false
+            },
+            "sql-post-query" : {
+              "displayName" : "SQL Post-Query",
+              "identifiesControllerService" : false,
+              "name" : "sql-post-query",
+              "sensitive" : false
+            },
+            "esql-auto-commit" : {
+              "displayName" : "Set Auto Commit",
+              "identifiesControllerService" : false,
+              "name" : "esql-auto-commit",
+              "sensitive" : false
+            },
+            "dbf-user-logical-types" : {
+              "displayName" : "Use Avro Logical Types",
+              "identifiesControllerService" : false,
+              "name" : "dbf-user-logical-types",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            },
+            "sql-pre-query" : {
+              "displayName" : "SQL Pre-Query",
+              "identifiesControllerService" : false,
+              "name" : "sql-pre-query",
+              "sensitive" : false
+            },
+            "compression-format" : {
+              "displayName" : "Compression Format",
+              "identifiesControllerService" : false,
+              "name" : "compression-format",
+              "sensitive" : false
+            },
+            "esql-output-batch-size" : {
+              "displayName" : "Output Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "esql-output-batch-size",
+              "sensitive" : false
+            },
+            "esql-fetch-size" : {
+              "displayName" : "Fetch Size",
+              "identifiesControllerService" : false,
+              "name" : "esql-fetch-size",
+              "sensitive" : false
+            },
+            "SQL select query" : {
+              "displayName" : "SQL select query",
+              "identifiesControllerService" : false,
+              "name" : "SQL select query",
+              "sensitive" : false
+            },
+            "dbf-normalize" : {
+              "displayName" : "Normalize Table/Column Names",
+              "identifiesControllerService" : false,
+              "name" : "dbf-normalize",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : {
+        "Params" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ ],
+          "name" : "Params",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "password",
+            "provided" : false,
+            "sensitive" : true
+          } ]
+        }
+      },
+      "parameterProviders" : { }
+    }
+  }
+}
