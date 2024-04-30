@@ -1,0 +1,6 @@
+flows:
+  ebcbb32b-3465-43b9-8bbd-5acd36c3b8db: {ver: 1, file: flow3.snapshot, comments: '',
+    author: anonymous, created: 1714473499583, flowName: flow3, flowDesc: Creating
+      flow from CLI}
+layoutVer: 1
+bucketId: 7a429ba8-c09e-4601-9346-678a110a0f0d
