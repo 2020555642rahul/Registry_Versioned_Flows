@@ -1,6 +1,0 @@
-flows:
-  bc4ea6a0-206d-4dbb-bec7-8279317ef178: {ver: 1, file: Bucket_Flow1.snapshot, comments: '',
-    author: anonymous, created: 1714472833170, flowName: Bucket_Flow1, flowDesc: Creating
-      flow from CLI}
-layoutVer: 1
-bucketId: 76fd6035-c1de-4929-b7c8-0804ea67367d
