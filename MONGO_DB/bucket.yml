@@ -1,0 +1,6 @@
+flows:
+  91bf79b3-5f71-4ebb-8fa0-c6ba01a091b7: {ver: 1, file: mongo_Flow.snapshot, comments: '',
+    author: anonymous, created: 1714458076269, flowName: mongo_Flow, flowDesc: Creating
+      flow from CLI}
+layoutVer: 1
+bucketId: b9beb6fb-7708-4f01-82d0-0e5d87fcfde1
