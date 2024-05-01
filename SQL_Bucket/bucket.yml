@@ -1,0 +1,6 @@
+flows:
+  ed940bd3-453f-4f08-b278-ae9f981d18c4: {ver: 1, file: sql1.snapshot, comments: '',
+    author: anonymous, created: 1714537685805, flowName: sql1, flowDesc: Creating
+      flow from CLI}
+layoutVer: 1
+bucketId: 9653558e-5288-454e-b3db-fd3cfca9aa0a
