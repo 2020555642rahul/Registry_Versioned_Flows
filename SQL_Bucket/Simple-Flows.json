@@ -19,6 +19,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "815fd0bb-f33e-3699-afd3-3a776f5b83f2",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "18794977-c16d-36e9-8163-b28cc7d7e9aa",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "969bfa0c-face-3722-a761-da7fb961f705",
+        "name" : "LogMessage",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "5b4a10a1-2502-320f-9d0d-dc9722336cd6",
         "name" : "Funnel",
         "type" : "FUNNEL"
@@ -87,6 +117,14 @@
       "position" : {
         "x" : 767.0,
         "y" : 4.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "815fd0bb-f33e-3699-afd3-3a776f5b83f2",
+      "position" : {
+        "x" : 426.5,
+        "y" : -193.0
       }
     } ],
     "identifier" : "flow-contents-group",
